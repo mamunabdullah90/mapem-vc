@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(110.3deg, rgba(72, 85, 99, 1) 8.8%, rgba(127, 146, 166, 1) 95.1%);
+    overflow: auto;
+    min-height: 100vh;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: #171010;
+    text-align: center;
+    color: gold;
+}
+
+.top h3 {
+    font-weight: 600;
+    padding: 5px 0px;
+    letter-spacing: 1px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.top::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.navbar {
+    background-color: #40868b;
+    padding: 1% 7%;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.navbar .nav-heading {
+    margin-top: 55px;
+    padding-top: 10px;
+}
+
+.nav-heading h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.nav-links a {
+    background-color: #0c6168;
+    border-radius: 10px;
+    margin: 7px 0;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background-color: #29303f;
+}
+
+.navbar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    padding: 5px;
+    text-align: center;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 90%;
+}
+
+.slideshow-container .card1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.slideshow-container .card {
+    font-size: large;
+    font-weight: bold;
+    color: yellow;
+    text-align: left;
+    width: 100%;
+    margin-bottom: -30px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.slideshow-container .card span {
+    color: #ff02c0;
+    font-size: 28px;
+    padding-right: 5px;
+}
+
+.slideshow-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.admission {
+    text-align: center;
+    padding: 5px;
+    width: 90%;
+    height: auto;
+    position: relative;
+    row-gap: 30px;
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admission .pic2 {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.admission .teaching {
+    font-size: larger;
+    font-weight: bolder;
+    color: blue;
+    text-align: left;
+    width: 100%;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.admission .teaching span {
+    color: aqua;
+    font-size: 28px;
+    padding-right: 5px;
+}
+
+.admission .teaching mark{
+    background-color: blue;
+    color: #fff;
+    padding-right: 7px;
+}
+
+.admission a {
+    background-color: #0008C1;
+    border-radius: 10px;
+    margin: 15px 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    box-shadow: 5px 5px 3px #00000075;
+}
+
+.admission a:hover {
+    transform: scale(0.9);
+    background-color: #2146C7;
+}
+
+.admission .face2 {
+    width: 80%;
+    height: auto;
+    background-color: aqua;
+    text-align: center;
+    color: #2146C7;
+    padding: 15px 7px;
+    border-radius: 10px;
+    box-shadow: 5px 7px 10px #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.admission .face2 mark{
+    background-color: #ffffff;
+    color: blue;
+    padding-right: 7px;
+}
+
+.admission::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.add {
+    text-align: center;
+    padding: 5px;
+    width: 90%;
+    height: auto;
+    position: relative;
+    row-gap: 30px;
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add .pic5 {
+    width: 78%;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    animation: anim2 2s linear infinite;
+}
+
+@keyframes anim2 {
+    50% {
+        border-color: yellow;
+    }
+
+    100% {
+        border-color: #ff02c0;
+    }
+}
+
+.add::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.copyright {
+    background: transparent;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 0;
+    width: 100%;
+    display: block;
+}
+
+.copyright p {
+    font-size: x-small;
+    letter-spacing: 1px;
+    color: yellow;
+}
+
+.copyright::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(red, yellow, green);
+    border-radius: 10px;
+}
